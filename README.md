@@ -1,2 +1,3 @@
-# HaskellUniversity-semester1
-Solving "https://github.com/HaskellChamber/Haskell-University" exercises
+# HaskellUniversity - Semester 1
+
+Solving [HaskellUniversity](https://github.com/HaskellChamber/Haskell-University) exercises
