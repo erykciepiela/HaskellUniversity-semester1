@@ -1,12 +1,15 @@
 module FizzBuzz
-    ( program
+    ( program,
+      fizzbuzz
     ) where
 
 import System.Environment
 import Data.Maybe
 
 program :: IO ()
-program = print $ answer [each 3 "fizz", each 5 "buzz"] show <$> [1..20]
+program = print $ fizzbuzz 20
+
+fizzbuzz n = answer [each 3 "fizz", each 5 "buzz"] show <$> [1..n]
 
 answer :: Monoid s => [a -> Maybe s] -> (a -> s) -> a -> s
 answer maybefs defaultf i = fromMaybe (defaultf i) (mconcat (fmap ($ i) maybefs))

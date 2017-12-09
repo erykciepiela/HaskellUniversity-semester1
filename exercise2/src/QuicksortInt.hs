@@ -1,5 +1,6 @@
 module QuicksortInt
-    ( program
+    ( program,
+      quicksort
     ) where
 
 import System.Environment
