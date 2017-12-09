@@ -1,6 +1,6 @@
 module Main where
 
-import QuicksortAll
+import FizzBuzz
 
 main :: IO ()
 main = program
